@@ -4,11 +4,14 @@ require './models/influencer.rb'
 require 'json'
 
 before do
-  content_type 'application/json'
 end
 
 get '/influencers' do
+  content_type 'application/json'
   @influencers = Influencer.all
   @influencers.to_json
 end
 
+get '/' do
+  send_file 'views/index.html'
+end

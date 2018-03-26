@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="modelInfluencers">
+  <head>
+    <title>Influencers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+  </head>
+
+  <body ng-controller="InfluencerCtrl" ng-init="loadData()">
+
+    <div ng-repeat="influencer in suggestedInfluencers">
+      <img ng-src="{{influencer.profile_image}}" />
+      {{influencer.full_name}}
+      <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+      <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+    </div>
+      ====================================
+    <div class="starred-influencers">
+      <select ng-model="sortInfluencers">
+        <option value="full_name">Full Name (A-Z)</option>
+        <option value="-full_name">Full Name (Z-A)</option>
+        <option value="-followers">Followers (High - Low)</option>
+        <option value="followers">Followers (Low - High)</option>
+        <option value="-engagement">Engagement (High - Low)</option>
+        <option value="engagement">Engagement (Low - High)</option>
+      </select>
+
+      <div ng-repeat="influencer in starredInfluencers | orderBy:sortInfluencers">
+        <img ng-src="{{influencer.profile_image}}" />
+        {{influencer.full_name}}
+        <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+        {{influencer.followers}} Followers
+        {{influencer.engagement}} Engagement
+        <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
+      </div>
+    </div>
+
+  </body>
+</html>
