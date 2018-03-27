@@ -13,10 +13,12 @@
       <div ng-repeat="influencer in suggestedInfluencers">
         <div class="suggested-influencer">
           <img ng-src="{{influencer.profile_image}}" />
+          <div class="suggested-influencer-details">
           {{influencer.full_name}}
           <br>
           <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
           <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+          </div>
         </div>
       </div>
     </div>
@@ -35,14 +37,22 @@
       <div ng-repeat="influencer in starredInfluencers | orderBy:sortInfluencers">
         <div class="starred-influencer">
           <img ng-src="{{influencer.profile_image}}" />
-          <div class="influencer-details">
-            {{influencer.full_name}}<br>
-            <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+          <div class="starred-influencer-details">
+            <div class="influencer-name-and-instagram">
+            <span>{{influencer.full_name}}</span>
+            <span><a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a></span>
+            </div>
+          <div class="influencer-followers">
+            <span>{{influencer.followers}}</span>
+            <span>Followers</span>
           </div>
-          <div class="influencer-followers">{{influencer.followers}}<br>Followers</div>
-          <div class="influencer-engagement">{{influencer.engagement}}<br>Engagement</div>
+          <div class="influencer-engagement">
+            <span>{{influencer.engagement}}</span>
+            <span>Engagement<span>
+          </div>
+          </div>
+          <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
         </div>
-        <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
       </div>
     </div>
 

@@ -26,12 +26,18 @@ button {
   border-right: dashed 2px;
   width: 300px;
   display: inline-block;
+  display: table;
+}
+
+.suggested-influencer-details {
+  display: table-cell;
+  vertical-align:middle;
+  width: 225px;
 }
 
 .starred-influencers {
   float: right;
   width: 700px;
-  padding-left: 10px;
 }
 
 .sort-drop-down {
@@ -40,26 +46,38 @@ button {
 
 .starred-influencer {
   display: inline-block;
+  display: table;
   width: inherit;
 }
 
 .starred-influencers img {
   float: left;
+  vertical-align: middle;
 }
 
 .suggested-influencers img {
   float: left;
 }
 
-.influencer-details {
-  float: left;
-  text-align: center;
+.starred-influencer-details {
+  display: table-cell;
+  vertical-align: middle;
+  width: 500px;
+}
+
+.influencer-name-and-instagram {
+  display: inline-table;
 }
 
 .influencer-followers {
-  float: left;
+  display: inline-table;
 }
 
 .influencer-engagement {
-  float: left;
+  display: inline-table;
+}
+
+span {
+  display: block;
+  vertical-align: middle;
 }
