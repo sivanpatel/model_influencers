@@ -9,9 +9,34 @@ body {
 
 .suggested-influencers {
   float: left;
-  width: 33%;
+  width: 200px;
 }
 
 .starred-influencers {
   float: right;
+  width: 800px;
+}
+
+.sort-drop-down {
+  float: right;
+}
+
+.starred-influencer {
+  display: inline-block;
+}
+
+img {
+  float: left;
+}
+
+.influencer-details {
+  float: left;
+}
+
+.influencer-followers {
+  float: left;
+}
+
+.influencer-engagement {
+  float: left;
 }

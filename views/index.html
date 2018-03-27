@@ -13,13 +13,14 @@
       <div ng-repeat="influencer in suggestedInfluencers">
         <img ng-src="{{influencer.profile_image}}" />
         {{influencer.full_name}}
+        <br>
         <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
         <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
       </div>
     </div>
     <div class="starred-influencers">
-      <h1>Starred Influencers</h1>
-      <select ng-model="sortInfluencers">
+      <h1>Starred Influencers
+      <select class="sort-drop-down" ng-model="sortInfluencers">
         <option value="full_name">Full Name (A-Z)</option>
         <option value="-full_name">Full Name (Z-A)</option>
         <option value="-followers">Followers (High - Low)</option>
@@ -27,13 +28,17 @@
         <option value="-engagement">Engagement (High - Low)</option>
         <option value="engagement">Engagement (Low - High)</option>
       </select>
-
+      </h1>
       <div ng-repeat="influencer in starredInfluencers | orderBy:sortInfluencers">
-        <img ng-src="{{influencer.profile_image}}" />
-        {{influencer.full_name}}
-        <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
-        {{influencer.followers}} Followers
-        {{influencer.engagement}} Engagement
+        <div class="starred-influencer">
+          <img ng-src="{{influencer.profile_image}}" />
+          <div class="influencer-details">
+            {{influencer.full_name}}<br>
+            <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+          </div>
+          <div class="influencer-followers">{{influencer.followers}}<br>Followers</div>
+          <div class="influencer-engagement">{{influencer.engagement}}<br>Engagement</div>
+        </div>
         <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
       </div>
     </div>
