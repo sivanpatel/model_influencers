@@ -39,19 +39,19 @@
           <img ng-src="{{influencer.profile_image}}" />
           <div class="starred-influencer-details">
             <div class="influencer-name-and-instagram">
-            <span>{{influencer.full_name}}</span>
-            <span><a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a></span>
+              <span>{{influencer.full_name}}</span>
+              <span><a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a></span>
             </div>
-          <div class="influencer-followers">
-            <span>{{influencer.followers}}</span>
-            <span>Followers</span>
+            <div class="influencer-followers">
+              <span>{{influencer.followers}}</span>
+              <span>Followers</span>
+            </div>
+            <div class="influencer-engagement">
+              <span>{{influencer.engagement}}</span>
+              <span>Engagement<span>
+            </div>
+            <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
           </div>
-          <div class="influencer-engagement">
-            <span>{{influencer.engagement}}</span>
-            <span>Engagement<span>
-          </div>
-          </div>
-          <button class="move-to-suggested" ng-click="moveToSuggested($index)">move to suggested</button>
         </div>
       </div>
     </div>

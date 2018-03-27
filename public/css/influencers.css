@@ -20,7 +20,6 @@ button {
 .suggested-influencers {
   float: left;
   width: 300px;
-  padding-left: 10px;
 }
 
 .suggested-influencer {
@@ -39,6 +38,7 @@ button {
 .starred-influencers {
   float: right;
   width: 700px;
+  padding-left: 10px;
 }
 
 .sort-drop-down {
