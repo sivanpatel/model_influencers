@@ -5,6 +5,11 @@ html {
 
 body {
   display: table-cell;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 1.7em;
 }
 
 img {
