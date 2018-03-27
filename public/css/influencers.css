@@ -20,6 +20,7 @@ button {
 .suggested-influencers {
   float: left;
   width: 300px;
+  padding-left: 10px;
 }
 
 .suggested-influencer {
