@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+span {
+  display: block;
+  vertical-align: middle;
+}
+
 .suggested-influencers {
   float: left;
   width: 300px;
@@ -67,7 +72,7 @@ a {
 .starred-influencer {
   display: inline-block;
   display: table;
-  width: inherit;
+  width: 100%;
 }
 
 .starred-influencers img {
@@ -82,24 +87,22 @@ a {
 .starred-influencer-details {
   display: table-cell;
   vertical-align: middle;
-  width: 500px;
+  min-width: 580px;
 }
 
 .influencer-name-and-instagram {
   display: inline-table;
+  width: 44%;
 }
 
 .influencer-followers {
   display: inline-table;
   text-align: center;
+  width: 25%;
 }
 
 .influencer-engagement {
   display: inline-table;
   text-align: center;
-}
-
-span {
-  display: block;
-  vertical-align: middle;
+  width: 25%;
 }
