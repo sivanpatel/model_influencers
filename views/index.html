@@ -4,17 +4,18 @@
     <title>Influencers</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/influencers.css">
   </head>
 
   <body ng-controller="InfluencerCtrl" ng-init="loadData()">
-
-    <div ng-repeat="influencer in suggestedInfluencers">
-      <img ng-src="{{influencer.profile_image}}" />
-      {{influencer.full_name}}
-      <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
-      <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+    <div class="suggested-influencers">
+      <div ng-repeat="influencer in suggestedInfluencers">
+        <img ng-src="{{influencer.profile_image}}" />
+        {{influencer.full_name}}
+        <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+        <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+      </div>
     </div>
-      ====================================
     <div class="starred-influencers">
       <select ng-model="sortInfluencers">
         <option value="full_name">Full Name (A-Z)</option>
