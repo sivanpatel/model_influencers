@@ -20,8 +20,9 @@ img {
 
 button {
   float: right;
-  font-size: 1em;
+  font-size: 1.2em;
   border: 0;
+  color: grey;
 }
 
 a {
@@ -54,6 +55,10 @@ a {
 }
 
 .sort-drop-down {
+  width: 240px;
+  font-size: 0.7em;
+  color: grey;
+  border-radius: 5px;
   float: right;
 }
 
