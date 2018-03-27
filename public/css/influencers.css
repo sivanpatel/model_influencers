@@ -11,6 +11,10 @@ img {
   border-radius: 50%;
 }
 
+button {
+  float: right;
+}
+
 .suggested-influencers {
   float: left;
   width: 300px;
