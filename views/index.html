@@ -14,7 +14,7 @@
         <div class="suggested-influencer">
           <img ng-src="{{influencer.profile_image}}" />
           <div class="suggested-influencer-details">
-          {{influencer.full_name}}
+            <b>{{influencer.full_name}}</b>
           <br>
           <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
           <button class="move-to-starred" ng-click="moveToStarred($index)">+</button>
@@ -39,15 +39,15 @@
           <img ng-src="{{influencer.profile_image}}" />
           <div class="starred-influencer-details">
             <div class="influencer-name-and-instagram">
-              <span>{{influencer.full_name}}</span>
+              <span><b>{{influencer.full_name}}</b></span>
               <span><a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a></span>
             </div>
             <div class="influencer-followers">
-              <span>{{influencer.followers}}</span>
+              <span><b>{{influencer.followers}}</b></span>
               <span>Followers</span>
             </div>
             <div class="influencer-engagement">
-              <span>{{influencer.engagement}}</span>
+              <span><b>{{influencer.engagement}}</b></span>
               <span>Engagement<span>
             </div>
             <button class="move-to-suggested" ng-click="moveToSuggested($index)">x</button>

@@ -24,6 +24,11 @@ button {
   border: 0;
 }
 
+a {
+  color: grey;
+  text-decoration: none;
+}
+
 .suggested-influencers {
   float: left;
   width: 300px;
@@ -79,10 +84,12 @@ button {
 
 .influencer-followers {
   display: inline-table;
+  text-align: center;
 }
 
 .influencer-engagement {
   display: inline-table;
+  text-align: center;
 }
 
 span {
