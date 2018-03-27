@@ -9,6 +9,7 @@
 
   <body ng-controller="InfluencerCtrl" ng-init="loadData()">
     <div class="suggested-influencers">
+      <h1>Suggested Influencers</h1>
       <div ng-repeat="influencer in suggestedInfluencers">
         <img ng-src="{{influencer.profile_image}}" />
         {{influencer.full_name}}
@@ -17,6 +18,7 @@
       </div>
     </div>
     <div class="starred-influencers">
+      <h1>Starred Influencers</h1>
       <select ng-model="sortInfluencers">
         <option value="full_name">Full Name (A-Z)</option>
         <option value="-full_name">Full Name (Z-A)</option>
