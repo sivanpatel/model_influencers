@@ -10,17 +10,20 @@
   <body ng-controller="InfluencerCtrl" ng-init="loadData()">
     <div class="suggested-influencers">
       <h1>Suggested Influencers</h1>
-      <div ng-repeat="influencer in suggestedInfluencers">
-        <img ng-src="{{influencer.profile_image}}" />
-        {{influencer.full_name}}
-        <br>
-        <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
-        <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+      <div class="suggested-influencer">
+        <div ng-repeat="influencer in suggestedInfluencers">
+          <img ng-src="{{influencer.profile_image}}" />
+          {{influencer.full_name}}
+          <br>
+          <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+          <button class="move-to-starred" ng-click="moveToStarred($index)">move to starred</button>
+        </div>
       </div>
     </div>
     <div class="starred-influencers">
       <h1>Starred Influencers
       <select class="sort-drop-down" ng-model="sortInfluencers">
+        <option value="" disabled selected>Sort by</option>
         <option value="full_name">Full Name (A-Z)</option>
         <option value="-full_name">Full Name (Z-A)</option>
         <option value="-followers">Followers (High - Low)</option>

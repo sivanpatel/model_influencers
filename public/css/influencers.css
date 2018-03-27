@@ -7,14 +7,21 @@ body {
   display: table-cell;
 }
 
-.suggested-influencers {
-  float: left;
-  width: 200px;
+img {
+  border-radius: 50%;
 }
 
+.suggested-influencers {
+  float: left;
+  width: 300px;
+}
+
+.suggested-influencer {
+  border-right: dashed 2px;
+}
 .starred-influencers {
   float: right;
-  width: 800px;
+  width: 700px;
 }
 
 .sort-drop-down {
@@ -23,9 +30,10 @@ body {
 
 .starred-influencer {
   display: inline-block;
+  width: inherit;
 }
 
-img {
+.starred-influencers img {
   float: left;
 }
 
