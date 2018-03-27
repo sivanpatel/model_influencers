@@ -3,6 +3,7 @@
   <head>
     <title>Influencers</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript/app.js"></script>
     <link rel="stylesheet" type="text/css" href="css/influencers.css">
   </head>
@@ -16,7 +17,7 @@
           <div class="suggested-influencer-details">
             <b>{{influencer.full_name}}</b>
           <br>
-          <a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a>
+          <a href="http://www.instagram.com/{{influencer.instagram_username}}"><i class="fab fa-instagram"></i> {{influencer.instagram_username}}</a>
           <button class="move-to-starred" ng-click="moveToStarred($index)">+</button>
           </div>
         </div>
@@ -40,7 +41,7 @@
           <div class="starred-influencer-details">
             <div class="influencer-name-and-instagram">
               <span><b>{{influencer.full_name}}</b></span>
-              <span><a href="http://www.instagram.com/{{influencer.instagram_username}}">{{influencer.instagram_username}}</a></span>
+              <span><a href="http://www.instagram.com/{{influencer.instagram_username}}"><i class="fab fa-instagram"></i> {{influencer.instagram_username}}</a></span>
             </div>
             <div class="influencer-followers">
               <span><b>{{influencer.followers}}</b></span>

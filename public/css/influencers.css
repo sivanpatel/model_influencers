@@ -22,7 +22,7 @@ button {
   float: right;
   font-size: 1.2em;
   border: 0;
-  color: grey;
+  color: lightgrey;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
   width: 300px;
   min-height: 750px;
   border-right: dotted 2px;
-  border-color: grey;
+  border-color: lightgrey;
 }
 
 .suggested-influencer {
@@ -59,7 +59,7 @@ a {
 .sort-drop-down {
   width: 240px;
   font-size: 0.7em;
-  color: grey;
+  color: lightgrey;
   border-radius: 5px;
   float: right;
 }
