@@ -12,6 +12,19 @@ My second attempt is this one, using a Sinatra backend with AngularJS on the fro
 
 The Sinatra backend returns a json of the database (that is the only action it does), and the Angular on the front end takes care of manipulating it (sorting, moving to different lists).
 
+To run this:
+```
+git clone git@github.com:sivanpatel/model_influencers.git
+cd model_influencers
+bundle install
+rake db:create
+rake db:migrate
+rake db:seed
+rackup
+```
+
+Then visit `localhost:9292`
+
 **Please upload this project to your preferred source control platform and share with Model Village. Place your work inside the `/test` folder**
 
 We’d like to see how you approach this challenge, and what process you take, so please aim to push regular commits to the repository as you work through the task.
