@@ -33,10 +33,12 @@ a {
 .suggested-influencers {
   float: left;
   width: 300px;
+  min-height: 750px;
+  border-right: dotted 2px;
+  border-color: grey;
 }
 
 .suggested-influencer {
-  border-right: dashed 2px;
   width: 300px;
   display: inline-block;
   display: table;
