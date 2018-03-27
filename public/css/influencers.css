@@ -82,6 +82,10 @@ span {
   vertical-align: middle;
 }
 
+.starred-influencers button {
+  padding-bottom: 23.5px;
+}
+
 .suggested-influencers img {
   float: left;
 }
@@ -94,6 +98,7 @@ span {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   border-radius: 0px 5px 5px 0px;
+  background-color: #FAFAFA;
 }
 
 .influencer-name-and-instagram {
@@ -111,4 +116,8 @@ span {
   display: inline-table;
   text-align: center;
   width: 25%;
+}
+
+.grey-text {
+  color: grey;
 }
