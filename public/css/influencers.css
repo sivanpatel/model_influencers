@@ -45,6 +45,7 @@ span {
 
 .suggested-influencer {
   width: 300px;
+  padding-top: 2px;
   display: inline-block;
   display: table;
 }
@@ -73,6 +74,7 @@ span {
   display: inline-block;
   display: table;
   width: 100%;
+  padding-top: 2px;
 }
 
 .starred-influencers img {
@@ -88,6 +90,10 @@ span {
   display: table-cell;
   vertical-align: middle;
   min-width: 580px;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .influencer-name-and-instagram {
