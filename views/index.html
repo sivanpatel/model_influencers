@@ -10,8 +10,8 @@
   <body ng-controller="InfluencerCtrl" ng-init="loadData()">
     <div class="suggested-influencers">
       <h1>Suggested Influencers</h1>
-      <div class="suggested-influencer">
-        <div ng-repeat="influencer in suggestedInfluencers">
+      <div ng-repeat="influencer in suggestedInfluencers">
+        <div class="suggested-influencer">
           <img ng-src="{{influencer.profile_image}}" />
           {{influencer.full_name}}
           <br>
@@ -22,15 +22,15 @@
     </div>
     <div class="starred-influencers">
       <h1>Starred Influencers
-      <select class="sort-drop-down" ng-model="sortInfluencers">
-        <option value="" disabled selected>Sort by</option>
-        <option value="full_name">Full Name (A-Z)</option>
-        <option value="-full_name">Full Name (Z-A)</option>
-        <option value="-followers">Followers (High - Low)</option>
-        <option value="followers">Followers (Low - High)</option>
-        <option value="-engagement">Engagement (High - Low)</option>
-        <option value="engagement">Engagement (Low - High)</option>
-      </select>
+        <select class="sort-drop-down" ng-model="sortInfluencers">
+          <option value="" disabled selected>Sort by</option>
+          <option value="full_name">Full Name (A-Z)</option>
+          <option value="-full_name">Full Name (Z-A)</option>
+          <option value="-followers">Followers (High - Low)</option>
+          <option value="followers">Followers (Low - High)</option>
+          <option value="-engagement">Engagement (High - Low)</option>
+          <option value="engagement">Engagement (Low - High)</option>
+        </select>
       </h1>
       <div ng-repeat="influencer in starredInfluencers | orderBy:sortInfluencers">
         <div class="starred-influencer">

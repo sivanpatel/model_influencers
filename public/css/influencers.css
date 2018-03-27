@@ -22,10 +22,14 @@ button {
 
 .suggested-influencer {
   border-right: dashed 2px;
+  width: 300px;
+  display: inline-block;
 }
+
 .starred-influencers {
   float: right;
   width: 700px;
+  padding-left: 10px;
 }
 
 .sort-drop-down {
@@ -41,8 +45,13 @@ button {
   float: left;
 }
 
+.suggested-influencers img {
+  float: left;
+}
+
 .influencer-details {
   float: left;
+  text-align: center;
 }
 
 .influencer-followers {
